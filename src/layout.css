@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-background: #2a2226;
+	--color-background-secondary: #1c1719;
+	--color-card: #382e32;
+	--color-primary: #ff66aa;
+	--color-accent: #d9a6bd;
+	--color-foreground: #fefefe;
+	--color-muted: #f0dbe4;
+}
+
+@font-face {
+	font-family: 'Torus';
+	src: url('$lib/assets/fonts/Torus/Torus Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Torus';
+	src: url('$lib/assets/fonts/Torus/Torus Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Torus';
+	src: url('$lib/assets/fonts/Torus/Torus Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@layer base {
+	body {
+		background-color: var(--color-background-secondary);
+		color: var(--color-foreground);
+		font-family: 'Torus', sans-serif;
+	}
+}
