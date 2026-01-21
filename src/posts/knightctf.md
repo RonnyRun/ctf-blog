@@ -1,19 +1,19 @@
 ---
-title: owo what's this
+title: KnightCTF
 description: introduction to this really cool blog
-date: '2026-1-21'
+date: '2026-1-20'
 tags:
-  - svelte
-  - blog
-  - frontend
+  - web
+  - sqli
+  - lfi
 published: true
 ---
 
-## owo what's this
+## KnightCTF
 
 hi, this is an [osu!](https://osu.ppy.sh/community/forums) themed blog that i made for my friend [ronnyrun](https://github.com/ronnyrun)
 
-## nerd!
+## Webz!
 
 it's made using [sveltekit](https://kit.svelte.dev/) and uses markdown files as blog posts.
 the site is completely static, markdown filkes are rendered at build time using [mdsvex](https://mdsvex.com/).
