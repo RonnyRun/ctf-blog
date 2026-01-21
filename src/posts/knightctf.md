@@ -1,6 +1,6 @@
 ---
 title: KnightCTF
-description: introduction to this really cool blog
+description: Full web / api
 date: '2026-1-20'
 tags:
   - web
