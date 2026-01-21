@@ -7,7 +7,7 @@
 </script>
 
 <SEO
-	title={data.meta.title + " | RonnyRun's DevLog"}
+	title={data.meta.title}
 	description={data.meta.description}
 	url={`/blog/${data.slug}`}
 	type="article"

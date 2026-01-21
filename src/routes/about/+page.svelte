@@ -7,4 +7,4 @@
 <SEO title="about!" description="un po' di informazioni su di me e su questo blog" url="/about" />
 <PageTitle title="about!" description="un po' di informazioni su di me e su questo blog" />
 
-<p>sono ronnyrun e mi scaco la mutanda</p>
+<p>i like computers beep boop</p>

@@ -1,6 +1,6 @@
 export default {
-    siteTitle: "RonnyRun's DevLog",
-    siteDescription: "A blog about CTFs, hacking, and programming.",
-    siteAuthor: "RonnyRun",
-    siteUrl: "https://ronnyrun.dev",
+    siteTitle: "osu!blog",
+    siteDescription: "an osu! themed blog based on markdown",
+    siteAuthor: "ssebastianoo",
+    siteUrl: "https://osu.blog",
 }

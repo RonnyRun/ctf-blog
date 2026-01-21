@@ -1,6 +1,6 @@
 # osu!blog
 
-an osu-themed blog that uses markdown files as posts.
+an osu! themed blog that uses markdown files as posts.
 
 ## requirements!
 

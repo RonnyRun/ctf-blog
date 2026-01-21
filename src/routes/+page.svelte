@@ -6,14 +6,7 @@
 	let { data } = $props();
 </script>
 
-<SEO
-	title="blog!"
-	description="questi sono i miei articoli davvero fichi sul mio viaggio nel mondo dei ctf"
-	url="/"
-/>
+<SEO title="blog!" description="an osu! themed blog based on markdown" url="/" />
 
-<PageTitle
-	title="blog!"
-	description="questi sono i miei articoli davvero fichi sul mio viaggio nel mondo dei ctf"
-/>
+<PageTitle title="blog!" description="an osu! themed blog based on markdown" />
 <PostsList posts={data.posts} />
