@@ -6,7 +6,7 @@ tags:
   - svelte
   - blog
   - frontend
-published: true
+published: false
 ---
 
 ## owo what's this

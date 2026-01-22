@@ -45,7 +45,7 @@
 				p.title.toLowerCase().includes(query.toLowerCase()) ||
 				p.description.toLowerCase().includes(query.toLowerCase()) ||
 				p.tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase())) ||
-				p.date.toLowerCase().includes(query.toLowerCase())
+				p.date.toLowerCase().includes(query.toLowerCase()) ||
 		)
 	);
 </script>

@@ -6,6 +6,8 @@ export type Post = {
     description: string
     date: string
     tags: string[]
+    ranking: string
+    teams: string
     published: boolean
 }
 

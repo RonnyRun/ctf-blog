@@ -28,6 +28,9 @@
 					{/each}
 				</div>
 				<div>
+					<p class="text-xs text-accent">#{post.ranking} over {post.teams} teams</p>
+				</div>
+				<div>
 					<p class="text-sm text-muted">{formatDate(post.date)}</p>
 				</div>
 			</div>
