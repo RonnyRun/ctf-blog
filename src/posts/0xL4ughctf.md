@@ -28,7 +28,7 @@ Today was a **good** day. I played the 0xL4ugh CTF together with my boys from
 [Bits & Pieces](https://ctftime.org/team/178228/), but none of us were ready for
 the **brutal difficulty** of the web challenges. 
 
-(Over 1600+ teams, only 44 teams solved it, including mine)
+(Over 1600+ teams, only 43 other teams solved the "Easy" challenge)
 
 <br>
 
