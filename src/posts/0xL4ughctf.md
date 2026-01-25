@@ -73,7 +73,7 @@ sql = f"SELECT id, name, description, user_id FROM products WHERE quantity = {qu
 The `quantity` parameter had some basic filtering but still allows sqli since quotes aren't needed for UNION attacks.
 <br>
 
-On top of that, a friend of mine made me notice that the SQLi didn't stop there! In fact, one might see that the results of the first sqli are reused in this other query
+On top of that, upon asking the CEO of web challenges himself aka [sebsrt](https://ctftime.org/user/163163) for leads, I noticed that the SQLi didn't stop there! In fact, one might see that the results of the first sqli are reused in this other query
 ```python
 user_q = f"SELECT id, name FROM users WHERE id = {r['user_id']}"
 user_row = db.execute(user_q).fetchone()
