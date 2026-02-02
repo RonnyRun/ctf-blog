@@ -29,6 +29,8 @@ function test() {
 
 source code is [available on github](https://github.com/ssebastianoo/osu-blog)
 
+it also supports mermaid diagrams, like so:
+
 ```mermaid
 graph TD
     A[Client] -->|HTTP Request| B(Load Balancer)
