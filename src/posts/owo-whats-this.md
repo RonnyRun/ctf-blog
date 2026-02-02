@@ -28,3 +28,12 @@ function test() {
 ```
 
 source code is [available on github](https://github.com/ssebastianoo/osu-blog)
+
+```mermaid
+graph TD
+    A[Client] -->|HTTP Request| B(Load Balancer)
+    B --> C{Server Ready?}
+    C -->|Yes| D[SvelteKit App]
+    C -->|No| E[Error Page]
+    D --> F[(Database)]
+```
