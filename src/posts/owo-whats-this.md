@@ -27,8 +27,6 @@ function test() {
 }
 ```
 
-source code is [available on github](https://github.com/ssebastianoo/osu-blog)
-
 it also supports mermaid diagrams, like so:
 
 ```mermaid
@@ -39,3 +37,5 @@ graph TD
     C -->|No| E[Error Page]
     D --> F[(Database)]
 ```
+
+source code is [available on github](https://github.com/ssebastianoo/osu-blog)

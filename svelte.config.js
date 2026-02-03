@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
-import { mermaid } from './src/lib/remark-mermaid.ts';
+import { mermaid } from './src/lib/remark-mermaid.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

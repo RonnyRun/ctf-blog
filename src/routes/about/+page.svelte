@@ -4,7 +4,7 @@
 	import SEO from '$lib/components/SEO.svelte';
 </script>
 
-<SEO title="about!" description="un po' di informazioni su di me e su questo blog" url="/about" />
-<PageTitle title="about!" description="un po' di informazioni su di me e su questo blog" />
+<SEO title="about!" description="some info about this blog" url="/about" />
+<PageTitle title="about!" description="some info about this blog" />
 
 <p>i like computers beep boop</p>

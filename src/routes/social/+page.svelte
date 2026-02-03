@@ -4,8 +4,8 @@
 	import SEO from '$lib/components/SEO.svelte';
 </script>
 
-<SEO title="social!" description="dove puoi trovarmi online" url="/social" />
-<PageTitle title="social!" description="dove puoi trovarmi online" />
+<SEO title="social!" description="find me wandering the internet" url="/social" />
+<PageTitle title="social!" description="find me wandering the internet" />
 
 <ul class="list-inside list-disc">
 	<li>
@@ -14,6 +14,6 @@
 		>
 	</li>
 	<li>
-		<a href="https://www.youtube.com/" class="hover:underline" target="_blank">youtube</a>
+		<a href="https://bsky.app/profile/gir8.it" class="hover:underline" target="_blank">bluesky</a>
 	</li>
 </ul>
