@@ -1,9 +1,37 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
-	import config from '../../../config';
 	import SEO from '$lib/components/SEO.svelte';
+	import { onMount } from 'svelte';
+	import type { MermaidConfig } from 'mermaid';
 
 	let { data } = $props();
+
+	async function initMermaid() {
+		if (typeof window !== 'undefined') {
+			// TS FIX 1: Cast the result to NodeListOf<HTMLElement>
+			// Mermaid's type definition specifically asks for HTMLElements, not generic Elements
+			const mermaidBlocks = document.querySelectorAll('.mermaid') as NodeListOf<HTMLElement>;
+
+			if (mermaidBlocks.length === 0) return;
+
+			// Dynamic import preserves types automatically
+			const mermaid = (await import('mermaid')).default;
+
+			const config: MermaidConfig = {
+				startOnLoad: false,
+				theme: 'default'
+			};
+
+			mermaid.initialize(config);
+
+			await mermaid.run({
+				// TS accepts this now because of the cast above
+				nodes: mermaidBlocks
+			});
+		}
+	}
+
+	onMount(initMermaid);
 </script>
 
 <SEO

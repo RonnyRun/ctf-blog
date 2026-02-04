@@ -8,6 +8,10 @@
 		url,
 		type = 'website'
 	}: { title?: string; description?: string; url: string; type?: string } = $props();
+
+	const siteUrl = config.siteUrl.trim().endsWith('/')
+		? config.siteUrl.trim().slice(0, -1)
+		: config.siteUrl.trim();
 </script>
 
 <svelte:head>
@@ -16,13 +20,13 @@
 	<meta name="description" content={description || config.siteDescription} />
 
 	<!-- Canonical -->
-	<link rel="canonical" href={`${config.siteUrl}/${url}`} />
+	<link rel="canonical" href={`${siteUrl}${url}`} />
 
 	<!-- Open Graph -->
 	<meta property="og:type" content={type} />
 	<meta property="og:title" content={(title ? `${title} | ` : '') + config.siteTitle} />
 	<meta property="og:description" content={description || config.siteDescription} />
-	<meta property="og:url" content={`${config.siteUrl}/${url}`} />
+	<meta property="og:url" content={`${siteUrl}${url}`} />
 	<meta property="og:site_name" content={config.siteTitle} />
 
 	<!-- Optional preview image -->

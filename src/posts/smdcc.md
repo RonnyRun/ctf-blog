@@ -27,4 +27,15 @@ function test() {
 }
 ```
 
+it also supports mermaid diagrams, like so:
+
+```mermaid
+graph TD
+    A[Client] -->|HTTP Request| B(Load Balancer)
+    B --> C{Server Ready?}
+    C -->|Yes| D[SvelteKit App]
+    C -->|No| E[Error Page]
+    D --> F[(Database)]
+```
+
 source code is [available on github](https://github.com/ssebastianoo/osu-blog)
