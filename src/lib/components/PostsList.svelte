@@ -10,9 +10,9 @@
 		<p class="text-muted">nessun post da vedere qui :&#40;</p>
 	{/if}
 
-	{#each posts as post}
+	{#each posts as post (post.slug)}
 		<a
-			href={'/blog/' + post.slug}
+			href={post.url}
 			class="flex flex-col gap-2 rounded-md border-l-4 border-l-primary bg-card px-6 py-2 [transition:border_0.1s_ease-in-out] hover:border-l-10"
 		>
 			<div class="space-y-1">
@@ -23,7 +23,7 @@
 			</div>
 			<div class="flex items-end justify-between">
 				<div class="flex gap-2">
-					{#each post.tags as tag}
+					{#each post.tags as tag, i (i)}
 						<p class="text-xs text-accent">&gt;{tag}</p>
 					{/each}
 				</div>
