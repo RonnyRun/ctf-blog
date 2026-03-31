@@ -6,6 +6,29 @@ export function getPosts(): Post[] {
         { eager: true }
     );
 
+    
+    const posts = Object.entries(modules)
+        .map(([path, { metadata }]) => ({
+            ...metadata,
+            slug: path.split('/').pop()!.replace('.md', '')
+        }))
+        .filter(post => post.published)
+        .sort(
+            (a, b) =>
+                new Date(b.date).getTime() -
+                new Date(a.date).getTime()
+        );
+
+    return posts;
+}
+
+export function getWriteups(): Post[] {
+    const modules = import.meta.glob<MarkdownModule>(
+        '/src/writeups/*.md',
+        { eager: true }
+    );
+
+    
     const posts = Object.entries(modules)
         .map(([path, { metadata }]) => ({
             ...metadata,

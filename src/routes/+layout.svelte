@@ -45,6 +45,7 @@
 	<div class="mx-auto w-full max-w-5xl">
 		<nav class="flex items-center gap-6 p-5">
 			<a class="text-foreground hover:underline" href="/">home</a>
+			<a class="text-foreground hover:underline" href="/writeups">writeups</a>
 			<a class="text-foreground hover:underline" href="/about">about</a>
 			<a class="text-foreground hover:underline" href="/social">social</a>
 			<div class="flex items-center gap-2">
